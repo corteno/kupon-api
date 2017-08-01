@@ -1,0 +1,18 @@
+{
+  "name": "kupon-api",
+  "version": "1.0.0",
+  "description": "Ligetkupon api for pdf",
+  "main": "server.js",
+  "scripts": {
+    "test": "nodemon server.js"
+  },
+  "author": "Borsodi Dávid",
+  "license": "ISC",
+  "dependencies": {
+    "blob-stream": "^0.1.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "nodemon": "^1.11.0",
+    "pdfkit": "^0.8.3"
+  }
+}
