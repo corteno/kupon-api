@@ -34,7 +34,6 @@ app.get('/:uid/:email', (req, res) => {
     res.setHeader('Content-disposition', 'attachment; filename="' + filename + '"');
     res.setHeader('Content-type', 'application/pdf');
 
-    doc.fontSize(18);
     doc.fillColor('white');
 
     doc.save();
@@ -49,20 +48,20 @@ app.get('/:uid/:email', (req, res) => {
 
     doc.save();
     doc.fill('#E0E0E0')
-        .fontSize(18).text(userId, 280, 70)
-        .fontSize(14).text(email, 235, 300)
-        .fontSize(18).text(userId, 280, 340)
-        .fontSize(14).text(email, 235, 565)
-        .fontSize(18).text(userId, 280, 600)
-        .fontSize(14).text(email, 235, 830)
-        .fontSize(18).text(userId, 280, 870)
-        .fontSize(14).text(email, 235, 1095) //End of first column
-        .fontSize(18).text(userId, 645, 340)
-        .fontSize(14).text(email, 595, 565)
-        .fontSize(18).text(userId, 645, 600)
-        .fontSize(14).text(email, 595, 830)
-        .fontSize(18).text(userId, 645, 870)
-        .fontSize(14).text(email, 595, 1095)
+        .fontSize(16).text(userId, 280, 70)
+        .fontSize(8).text(email, 235, 300)
+        .fontSize(16).text(userId, 280, 340)
+        .fontSize(8).text(email, 235, 565)
+        .fontSize(16).text(userId, 280, 600)
+        .fontSize(8).text(email, 235, 830)
+        .fontSize(16).text(userId, 280, 870)
+        .fontSize(8).text(email, 235, 1095) //End of first column
+        .fontSize(16).text(userId, 645, 340)
+        .fontSize(8).text(email, 595, 565)
+        .fontSize(16).text(userId, 645, 600)
+        .fontSize(8).text(email, 595, 830)
+        .fontSize(16).text(userId, 645, 870)
+        .fontSize(8).text(email, 595, 1095)
 
 
     doc.restore();
